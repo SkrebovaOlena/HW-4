@@ -8,6 +8,14 @@ public class PrivateHouse extends Build{
     }
 
     @Override
+    public String getInformationAboutBuild() {
+        String information ="The privateHouse number " + getNumber() +
+                " with square " + getSquare() + " costs " + getSquare() * getPricePerAMeter()+
+                ". " + setOwner();
+        return information;
+    }
+
+    @Override
     public double getPricePerAMeter() {
         if (getSquare() < 100) {
             return 700;

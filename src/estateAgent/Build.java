@@ -26,6 +26,7 @@ public abstract class Build implements OwnerAble {
         this.number = number;
     }
 
-   public abstract double getPricePerAMeter();
+   public abstract String getInformationAboutBuild();
 
+    public abstract double getPricePerAMeter();
 }

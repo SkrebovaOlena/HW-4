@@ -12,17 +12,9 @@ public class Main {
         Office office = new Office(200, 14);
         PrivateHouse privateHouse = new PrivateHouse(110, 54);
 
-        System.out.println("The flat number " + flat.getNumber() + " on floor " + flat.getFloor() +
-                " with square " + flat.getSquare() + " costs " + flat.getSquare() * flat.getPricePerAMeter());
-        System.out.println(flat.setOwner());
-
-        System.out.println("The office number " + office.getNumber() +
-                " with square " + office.getSquare() + " costs " + office.getSquare() * office.getPricePerAMeter());
-        System.out.println(office.setOwner());
-
-        System.out.println("The privateHouse number " + privateHouse.getNumber() +
-                " with square " + privateHouse.getSquare() + " costs " + privateHouse.getSquare() * privateHouse.getPricePerAMeter());
-        System.out.println(privateHouse.setOwner());
+        System.out.println(flat.getInformationAboutBuild());
+        System.out.println(office.getInformationAboutBuild());
+        System.out.println(privateHouse.getInformationAboutBuild());
     }
 }
 

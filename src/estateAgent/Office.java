@@ -6,6 +6,14 @@ public class Office extends Build{
     }
 
     @Override
+    public String getInformationAboutBuild() {
+        String information = "The office number " + getNumber() +
+                " with square " + getSquare() + " costs " + getSquare() * getPricePerAMeter() +
+                ". " + setOwner();
+        return information;
+    }
+
+    @Override
     public double getPricePerAMeter() {
         return 800;
     }

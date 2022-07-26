@@ -13,6 +13,7 @@ public class Flat extends Build{
         return floor;
     }
 
+
     @Override
     public double getPricePerAMeter() {
         if (floor < 3){
@@ -28,6 +29,14 @@ public class Flat extends Build{
     @Override
     public String setOwner() {
         return "New owner of flat is Mr.Bond";
+    }
+
+    @Override
+    public String getInformationAboutBuild() {
+        String information ="The flat number " + getNumber() + " on floor " + getFloor() +
+                " with square " + getSquare() + " costs " + getSquare() * getPricePerAMeter()+
+                ". " + setOwner();
+       return information;
     }
 }
 
