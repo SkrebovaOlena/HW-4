@@ -12,9 +12,9 @@ public class Main {
         Office office = new Office(200, 14);
         PrivateHouse privateHouse = new PrivateHouse(110, 54);
 
-        System.out.println(flat.getInformationAboutBuild());
-        System.out.println(office.getInformationAboutBuild());
-        System.out.println(privateHouse.getInformationAboutBuild());
+        System.out.println(flat.toString(flat.getClass().getSimpleName().toString()));
+        System.out.println(office.toString(office.getClass().getSimpleName().toString()));
+        System.out.println(privateHouse.toString(privateHouse.getClass().getSimpleName().toString()));
     }
 }
 

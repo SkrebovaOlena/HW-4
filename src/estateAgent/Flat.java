@@ -32,11 +32,10 @@ public class Flat extends Build{
     }
 
     @Override
-    public String getInformationAboutBuild() {
-        String information ="The flat number " + getNumber() + " on floor " + getFloor() +
-                " with square " + getSquare() + " costs " + getSquare() * getPricePerAMeter()+
+    public String toString(String build) {
+        return "Build " + build + " number " + getNumber() + " on " + this.floor +
+                " floor with square " + getSquare() + " costs " + getSquare() * getPricePerAMeter()+
                 ". " + setOwner();
-       return information;
     }
 }
 
