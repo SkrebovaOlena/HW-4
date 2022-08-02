@@ -13,7 +13,6 @@ public class Flat extends Build{
         return floor;
     }
 
-
     @Override
     public double getPricePerAMeter() {
         if (floor < 3){
@@ -32,10 +31,11 @@ public class Flat extends Build{
     }
 
     @Override
-    public String toString(String build) {
-        return "Build " + build + " number " + getNumber() + " on " + this.floor +
+    public String toString() {
+        return "Flat number " + getNumber() + " on " + this.floor +
                 " floor with square " + getSquare() + " costs " + getSquare() * getPricePerAMeter()+
                 ". " + setOwner();
     }
+
 }
 

@@ -4,5 +4,5 @@ public interface OwnerAble {
 
     String setOwner();
 
-    String toString(String build);
+    String toString();
 }
